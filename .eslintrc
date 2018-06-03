@@ -27,6 +27,7 @@
     "no-plusplus": "off",
     "no-class-assign": "off",
     "no-duplicate-imports": "off",
+    "react/no-deprecated": "warn",
 
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",

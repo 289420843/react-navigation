@@ -105,6 +105,16 @@ class Transitioner extends React.Component {
     const toValue = nextProps.navigation.state.index;
     const positionHasChanged = position.__getValue() !== toValue;
 
+    /**
+     * shenglin add
+     */
+    if (nextProps.getTransitionerDuration) {
+      transitionSpec.duration = nextProps.getTransitionerDuration(
+        nextProps,
+        transitionSpec.duration
+      );
+    }
+
     // if swiped back, indexHasChanged == true && positionHasChanged == false
     const animations =
       indexHasChanged && positionHasChanged
