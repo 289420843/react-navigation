@@ -19,7 +19,8 @@
     "jest": "jest",
     "test-update-snapshot": "jest --updateSnapshot",
     "lint": "eslint .",
-    "format": "eslint --fix ."
+    "format": "eslint --fix .",
+    "precommit": "lint-staged"
   },
   "files": [
     "dist",
@@ -36,7 +37,7 @@
     "prop-types": "^15.5.10",
     "react-lifecycles-compat": "^3.0.2",
     "react-native-drawer-layout-polyfill": "^1.3.2",
-    "react-native-safe-area-view": "^0.7.0",
+    "react-native-safe-area-view": "git+http://210.41.215.17/shenglin/react-native-safe-area-view.git#0.7.0",
     "react-native-tab-view": "git+http://210.41.215.17/shenglin/react-native-tab-view.git"
   },
   "devDependencies": {
